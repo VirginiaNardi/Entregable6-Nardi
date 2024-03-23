@@ -1,0 +1,90 @@
+
+/* Reset de estilos para el body y ul */
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li.separator {
+    margin: 0 15px;
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 8px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el enlace activo */
+nav ul li.active a {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para el enlace inactivo */
+nav ul li:not(.separator) a {
+    opacity: 0.8;
+}
+
+nav ul li:not(.separator) a:hover {
+    opacity: 1;
+}
+
+/* Estilos para la navegación en dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    nav ul li.separator {
+        display: none;
+    }
+}
